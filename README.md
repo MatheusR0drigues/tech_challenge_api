@@ -1,20 +1,3 @@
-# Estrutura da Documentação da API
-
-## 1. Introdução
-- **Propósito da API:** Descrever o propósito da API.
-- **Público-alvo:** Definir o público-alvo da API.
-- **Informações gerais sobre a base de dados:** Oferecer uma visão geral da base de dados utilizada.
-
-## 2. Endpoints
-- **Descrição de cada endpoint:** Detalhar a funcionalidade de cada endpoint.
-- **Parâmetros aceitos:** Listar os parâmetros que cada endpoint pode receber.
-- **Respostas esperadas:** Descrever as respostas esperadas de cada endpoint.
-- **Exemplos de uso:** Fornecer exemplos práticos de como utilizar os endpoints.
-
-## 3. Manuseio de Erros
-- **Códigos de status:** Especificar os códigos de status retornados pela API.
-- **Mensagens de erro comuns:** Listar as mensagens de erro mais comuns e suas causas.
-
 # Documentação Detalhada
 
 ## 1. Introdução
@@ -57,10 +40,14 @@ A API é acessada via HTTP, retornando dados em formato JSON. Não é necessári
 - **404 Not Found:** Nenhum dado encontrado para os parâmetros fornecidos.
 - **500 Internal Server Error:** Erro interno do servidor.
 
-# Funcionalidades
+# 5. Funcionalidades
 
 - **Extração Automatizada:** Coleta dados automaticamente do site da Embrapa conforme configurado.
 - **Endpoints de API:** Fornece vários endpoints para acessar dados sobre produção, processamento, e mais.
 - **Dados em Formato JSON:** Todos os dados são retornados em formato JSON, facilitando a integração com outras aplicações e sistemas.
 
-# Tecnologias Util
+# 6. Tecnologias Utilizadas
+
+- **Flask:** Framework web utilizado para construir a API.
+- **Requests:** Biblioteca utilizada para realizar requisições HTTP ao site da Embrapa.
+- **BeautifulSoup:** Biblioteca usada para fazer o parsing das páginas HTML obtidas do site da Embrapa.
