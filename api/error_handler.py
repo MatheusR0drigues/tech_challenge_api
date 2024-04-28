@@ -4,7 +4,7 @@ def handle_error(e):
     if hasattr(e, 'code'):  # Erros HTTP padrão
         response = jsonify({"error": str(e.description)})
         response.status_code = e.code
-    else:  # Erros não específicos (ex: erros de runtime)
+    else:
         response = jsonify({"error": "Ocorreu um erro interno no servidor."})
         response.status_code = 500
     return response
